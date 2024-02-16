@@ -8,6 +8,7 @@ The splits are available at ``` {dataset}_data/split ```.
 ## Model Training
 Run 
 ```
+cd dmp
 bash train3times_seeds_20p.sh -c 0 -t cdifw_dmp_ours -m  -e '' -l 3e-2 -w 0.1
 ```
 Have fun.
