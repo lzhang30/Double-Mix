@@ -1,4 +1,7 @@
 # lzhang
+
+Here is the code for our work Double-Mix Pseudo-Label Framework.
+
 ## Data Preprocess
 To preprocess the dataset, you can follow the work of [DHC](https://github.com/xmed-lab/DHC).
 
