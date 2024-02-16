@@ -1,10 +1,10 @@
 # lzhang
 ## Data Preprocess
-To preprocess the dataset, you can follow the work of [DHC]{https://github.com/xmed-lab/DHC}.
+To preprocess the dataset, you can follow the work of [DHC](https://github.com/xmed-lab/DHC).
 
-You can also use the lzhang/dmp/code/data/preprocess_amos.py to preprocess the dataset.
+You can also use the ``` lzhang/dmp/code/data/preprocess_amos.py ``` to preprocess the dataset.
 
-The splits are available at {dataset}_data/split.
+The splits are available at ``` {dataset}_data/split ```.
 ## Model Training
 Run 
 ```
