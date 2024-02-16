@@ -1,4 +1,4 @@
-# lzhang
+# Double-Mix Pseudo-Label Framework
 
 Here is the code for our work Double-Mix Pseudo-Label Framework.
 
