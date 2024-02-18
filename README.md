@@ -3,7 +3,7 @@
 Here is the code for our work Double-Mix Pseudo-Label Framework.
 
 ## Data Preprocess
-To preprocess the dataset, you can follow the work of [DHC](https://github.com/xmed-lab/DHC).
+To prepare the dataset, you can follow the work of [DHC](https://github.com/xmed-lab/DHC).
 
 You can also use the ``` lzhang/dmp/code/data/preprocess_amos.py ``` to prepare the dataset.
 
