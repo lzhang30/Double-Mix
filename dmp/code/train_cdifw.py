@@ -405,15 +405,8 @@ if __name__ == '__main__':
                     conf_weight = (sum_per_channel.detach()+1) / (ones_per_channel.detach()+1)
                     
                     conf.update(conf_weight)
-                    #batch_averages = conf_weight.detach()
-                    #conf_weight =1-( conf_weight / conf_weight.max())
                     conf_weight = conf.get_conf()
-                    #conf_weight = (1-conf_weight+1e-2)/((1-conf_weight).max()+1e-2)  #1/torch.exp(conf_weight) #
-                    #print(conf_weight)
-                    #conf_weight = torch.sqrt(1-conf_weight)
-                    
-                    
-                    #print(f'conf_weight: {conf_weight}')
+
                     # cps (ce only)
                     max_A = torch.argmax(output_A.detach(), dim=1, keepdim=True).long()
                     max_B = torch.argmax(output_B.detach(), dim=1, keepdim=True).long()
