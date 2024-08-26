@@ -365,7 +365,7 @@ if __name__ == '__main__':
     
     average_per_channel_total = torch.ones(config.num_cls).cuda()  # 假设通道数为config.num_cls
     batch_averages = torch.ones(config.num_cls).cuda()
-    
+    iter_num = 0
     for epoch_num in range(args.max_epoch + 1):
         loss_list = []
         loss_cps_list = []
@@ -374,6 +374,7 @@ if __name__ == '__main__':
         model_A.train()
         model_B.train()
         for batch_l, batch_u in tqdm(zip(labeled_loader, unlabeled_loader)):
+            iter_num += 1 
             optimizer_A.zero_grad()
             optimizer_B.zero_grad()
 
@@ -508,6 +509,8 @@ if __name__ == '__main__':
                 amp_grad_scaler.step(optimizer_A)
                 amp_grad_scaler.step(optimizer_B)
                 amp_grad_scaler.update()
+                ema_model_A = update_ema_variables(ema_model_A, model_A, 0.99, iter_num)
+                ema_model_B = update_ema_variables(ema_model_B, model_B, 0.99, iter_num)
                 # if epoch_num>0:
 
             else:
