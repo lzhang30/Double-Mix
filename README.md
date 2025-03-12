@@ -28,9 +28,9 @@ The notation 20p represents training with 20% labeled data. You can modify this 
 
 `-m`: Specifies the training method. The available methods include:
 
-1 `cdifw_dmp_ours` (our proposed method)
+`--cdifw_dmp_ours` (our proposed method)
 
-2 `cdifw` (ablation studies)
+`--cdifw` (ablation studies)
 
 `-e`: Defines the name of the current experiment. default: `'test'`
 
