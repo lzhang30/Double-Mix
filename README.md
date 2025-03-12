@@ -30,11 +30,11 @@ The notation 20p represents training with 20% labeled data. You can modify this 
 cdifw_dmp_ours (our proposed method)
 cdifw (ablation studies)
 
--e: Defines the name of the current experiment.
+`-e`: Defines the name of the current experiment. default: `'test'`
 
--l: Sets the learning rate.
+`-l`: Sets the learning rate. In this experiment, it was set to `0.1`
 
--w: Specifies the weight of the unsupervised loss.
+`-w`: Specifies the weight of the unsupervised loss.
 
 
 Have fun.
