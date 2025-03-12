@@ -54,3 +54,9 @@ If this code is helpful for your study, welcome to cite our paper
   publisher={Springer}
 }
 ```
+
+## License
+
+This repository is released under MIT License.
+
+
