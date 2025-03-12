@@ -27,8 +27,10 @@ The notation 20p represents training with 20% labeled data. You can modify this 
 `-t`: Defines the task, which can be either synapse or amos.
 
 `-m`: Specifies the training method. The available methods include:
-cdifw_dmp_ours (our proposed method)
-cdifw (ablation studies)
+
+1 `cdifw_dmp_ours` (our proposed method)
+
+2 `cdifw` (ablation studies)
 
 `-e`: Defines the name of the current experiment. default: `'test'`
 
