@@ -1,6 +1,6 @@
 # Double-Mix Pseudo-Label Framework
 
-Here is the code for our proposed Double-Mix Pseudo-Label Framework.
+Here is the code for our proposed Double-mix pseudo-label framework: enhancing semi-supervised segmentation on category-imbalanced CT volumes.
 
 ## Data Preprocess
 To prepare the dataset, you can follow the work of [DHC](https://github.com/xmed-lab/DHC).
